@@ -12,4 +12,4 @@ print(txt.swapcase())     #swapcase()	Changes uppercase to lowercase and vice ve
 print(txt.find("naiTik")) #find()  Returns the index of a substring.
 print(txt.count("n"))     #count()  Counts occurrences of a substring.
 print(txt.split())        #split()  Splits a string into a list.
-print(txt.replace("naiTIK","pandey")) #replace()  Replaces one substring with another
+print(txt.replace("naiTIK","pandey")) #replace()  Replaces one substring with 
