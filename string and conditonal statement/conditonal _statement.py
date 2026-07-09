@@ -18,5 +18,15 @@ else:
     # code'''
 
 
+#eg
+marks = 65
+
+if marks >= 40:
+    print("Result: Pass")
+    print("Congratulations!")
+else:
+    print("Result: Fail")
+    print("Better luck next time!")
+
 
 
