@@ -1,3 +1,7 @@
+#string - string is a sequence of characters enclosed in single or double quotes.
+#eg 
+name = "naitik"    # naitik is a string
+
 #string method
 #String methods are built-in functions used to perform operations on strings. They return a new string because strings are immutable.
 
