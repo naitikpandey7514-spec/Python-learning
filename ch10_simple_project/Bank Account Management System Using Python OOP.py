@@ -1,11 +1,16 @@
-#transection (account balance, debit and credit)
+#BANK ACCOUNT MANAGEMENT SYSTEM
 
+class bank_Account:
 
-class Account:
-
-    def details(self):
+    def create_account(self):
+        self.name = input("enter the name:")
+        self.address = input("enter your address:")
+        self.contact = int(input("enter your contact number:"))
         self.account_no = int(input("Enter Account Number: "))
-        self.balance = int(input("Enter Current Balance: "))
+        self.balance = int(input("Add money in your  account: "))
+
+        print("Your account is created successfully")
+        
 
     def debit(self):
         amount = int(input("Enter Deposit Amount: "))
@@ -27,15 +32,22 @@ class Account:
 
     def account_balance(self):
         print("Account Balance:", self.balance)
+    
+    def detail(self):
+        print("your name is:",self.name)
+        print("your address is :",self.address)
+        print("your contact number is:",self.contact)
+        print("your account no is",self.account_no)
+        print("your current balance is :",self.balance)
 
-
-s1 = Account()
-s1.details()
+s1 = bank_Account()
+s1.create_account()
 
 while True:
     print("1. Deposit")
     print("2. Withdraw")
     print("3. Check Balance")
+    print("4. Acc_details")
 
     choice = int(input("Enter your choice: "))
 
@@ -45,5 +57,7 @@ while True:
         s1.credit()
     elif choice == 3:
         s1.account_balance()
+    elif choice == 4:
+        s1.detail()
     else:
         print("Invalid Choice")
